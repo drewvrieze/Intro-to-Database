@@ -5,7 +5,6 @@ with open('primary-time-series.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     count=0
     tally=0
-    tally=0
     tallysq=0
     measure = []
     for row in spamreader:
