@@ -25,7 +25,7 @@ topics
         - the habit of using <table>_<attribute> for foriegn keys
             - keys into other tables from this table
                 - registrations
-                    -> students_id as a foreign k ey into the students table column id
+                    -> students_id as a foreign key into the students table column id
                     -> courses_crn as a foreign key into the courses table column crn
             - reason 
                 - students join registrations on students.id=registrations.student_id
