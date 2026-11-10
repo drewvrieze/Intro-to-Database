@@ -1,0 +1,40 @@
+source .drivers/bin/activate
+export DBPASSWORD = password
+echo $DBPASSWORD -> password
+source .drivers/bin/activate
+export DBNAME=mydatabase
+export DBUSER=dwvrieze
+export DBHOST=localhost
+Using Glade?
+Import his published notes on a new python file
+
+Use dia to create diagrams to show connections between our tables we use. Mac cannot install?
+# dumb # select * from students cross join courses cross join registrations where students.id=registrations.student_id and registrations.courses_crn=courses.crn;
+\timing # times how long it takes the database to run
+select * from students join registrations on students.id = registrations.students_id join courses on courses.crn = registrations.courses_crn;
+create index on students (id);
+create index on courses (crn);
+create index on registrations (student_id,courses_crn);
+create index on registrations (student_id);
+create index on registrations (courses_crn);
+\! clear # runs terminal commands
+\d registrations # gives metadata of table
+create table test(id serial, a float, b float);
+\i use this as input
+explain shows how your code is going to run
+
+\COPY dischargeoct FROM 'DischargeDataOct.csv' DELIMITER ',' CSV HEADER;
+select * from dischargeoct limit 10;
+abcdefghijklmnopqrstuvwxyzàáâäǎæãåābçćčċďðèéêëěẽēėęfğġħìíîïǐĩīıįjķłļľmñńņňòóôöǒœøõōpqřßşșśšțťþùúûüǔũūűůvŵxýŷÿźžż
+select tempoct.time as time, dischargeoct.value as disc, tempoct.value as temp 
+from dischargeoct join tempoct on dischargeoct.time = tempoct.time limit 10;
+create table dataOct (time timestamp, disc float, temp float);
+\i testJoin.sql
+
+
+NECCECARY
+source .drivers/bin/activate
+psql -l -- shows all my databases i have
+python -c "import os, psycopg2; conn = psycopg2.connect(dbname=os.environ['DBNAME'], user=os.environ['DBUSER'], host=os.environ['DBHOST'], password=os.environ['DBPASSWORD']); print('Connected successfully!'); conn.close()"
+ -- connects to database
+psql -U dwvrieze -d mydatabase enters my database

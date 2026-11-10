@@ -1,0 +1,53 @@
+50% multiple choice, <- 20 questions, 50% code reading and writing
+topics
+    Normalization more in focus
+        - first normal from
+            - one value per cell
+        - second normal from
+            - each table has a key that indicates the rest of the columns
+            - has to be in first normal from
+        - third normal from
+            - the key is the primary way to identify the data in the other columns
+            - it is alloud for there to be other keys
+            - no transitive relationships (a subtable in this table)
+            - has to be in second normal form
+        - does not make the tables simpler or easier to understand
+        - updates more reliable
+        - adding values faster
+        Vocabulary of Database Analysis
+    Database design using the metadata functions
+        - once we have a design we should be able to write
+            - Create table queries
+            - Alter table queries
+            - drop table (don't do this without backing up the database/table)
+        - use of the "serial" for auto increment
+        - use of the "primary key" in create table to create an index
+        - the habit of using <table>_<attribute> for foriegn keys
+            - keys into other tables from this table
+                - registrations
+                    -> students_id as a foreign key into the students table column id
+                    -> courses_crn as a foreign key into the courses table column crn
+            - reason 
+                - students join registrations on students.id=registrations.student_id
+                - students join registrations on students.id=student_id
+    Database design diagrams
+        - no set absolute rule for how to draw these diagrams
+        - ER diagram has that formalization
+            - but it is not use consistently
+        - understand the usefulness of showing the connections between tables
+    CRUD operations on the database
+        - (C) Insert records into a database design
+        - (R) select records from a database table or tables
+        - Precision is necessary
+    Join is not the focus of this test (Test 3 it will be)
+    Give you some UI or GUI code you should be able to explain what is going on
+        - you will be given code from class and asked to explain what is happening
+        - write what will happen don't just repeat the words in the code
+    Note: reiterationg the CRUD operations is likely to be on the test
+        vocabulary for the industry right now
+        create -> Insert 
+        retrieve -> select
+        update -> update
+        delete -> delete (not drop table)
+
+

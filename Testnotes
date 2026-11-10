@@ -1,0 +1,39 @@
+Test will be at 9:30 am Tuesday Sep 22nd
+It is expected to take students 50 min
+
+75% of points for test will come from multiple choice
+    25 multiple choice
+25% will come from reading/writing code
+    2 - 3 programming examples
+        reading code will be from code you have seen in class
+            extend what you have seen in class
+            python foundation is assumed
+        writing code will come from something I have already asked you to do
+Topics
+    processing text files with python
+        - there are cases where this is reasonable to do
+        - if i have to do the process repeatedly, then automating is probably better
+        python
+            csv reader
+    spreadsheets
+        - there are cases where this is a reasonable solution
+                ++ not joins
+                Vlookup
+        - 1st normal form
+            one value per cell
+    Normalizing
+        - 2nd normal form
+            There is a key that implys the rest fo the data in a row or in a relation
+            - The key is frequently an auto incrememnt counter
+            - --commonly a uuid unique ID is used instead of an auto increment
+        - more than just spreadsheets, each column (fields, attribute) has a type (int, text, bool, float)
+    CRUD
+        - create -> creating information/relations/rows in a table -> insert
+        - Retrieve -> getting data from the database -> select
+        - update -> update a field/column/attribute value -> update
+        - delete -> delete rows/relations from a table -> delete
+    NOT CRUD
+        - create table -> Meta Data operation
+        - Alter table -> meta data operation
+        - create user -> meta data information
+    

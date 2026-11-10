@@ -1,0 +1,38 @@
+Taking notes
+create - insert
+retrieve - select
+update - update
+delete - delete
+create table simple (a int, b int)
+create table students (id int, first text, last text, phone text, major text);
+select * from students;
+insert into students (id,first,last,phone,major) values (1,'Karl',"Castleton",'719-719-7191',"CS")
+select * from students;
+insert into students (id,first,last,phone,major) values (2,'Bob',"Smith",'719-728-6282',"Art")
+insert into students (id) values (3);
+insert into students (id,first) values ('bob',10)
+delete from students; (DONT DO)
+delete from students where id=3;
+create table courses (crn int, major text, num int);
+insert into courses (crn,major,num) values (251,"CSCI",260);
+insert into courses (crn,major,num) values (253,"MATH",151);
+select * from courses:
+create table registrations (students_id int, courses_crn int, grade text);
+select * from students
+select * from courses
+insert into registrations (students_id, courses_crn, grade) values (1,251, "A");
+select * from students join registrations on students.id=students_id;
+select first,last,courses.major,num,grade from students join registrations on students.id=students_id join in courses of courses.crn=courses_crn;
+insert into registrations (students_id, courses_crn, grade) values (2,253, "C");
+insert into registrations (students_id, courses_crn, grade) values (1,253, "A");
+
+update students set first = 'Bob', last = 'smith', phone ="", major = 'art' where uid=2;
+alter table students rename column uid to id;
+select * from courses;
+alter table courses add column uid serial;
+select * from courses;
+delete from courses where uid = 3
+python -m venv .drivers
+ls - lists files, .drivers is hidden because . in the name
+ls -la shows all the folders
+source .drivers/bin/activate
