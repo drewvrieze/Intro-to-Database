@@ -32,3 +32,9 @@ create table dataOct (time timestamp, disc float, temp float);
 \i testJoin.sql
 
 
+NECCECARY
+source .drivers/bin/activate
+psql -l -- shows all my databases i have
+python -c "import os, psycopg2; conn = psycopg2.connect(dbname=os.environ['DBNAME'], user=os.environ['DBUSER'], host=os.environ['DBHOST'], password=os.environ['DBPASSWORD']); print('Connected successfully!'); conn.close()"
+ -- connects to database
+psql -U dwvrieze -d mydatabase enters my database
