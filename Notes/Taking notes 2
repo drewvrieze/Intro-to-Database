@@ -25,11 +25,15 @@ explain shows how your code is going to run
 
 \COPY dischargeoct FROM 'DischargeDataOct.csv' DELIMITER ',' CSV HEADER;
 select * from dischargeoct limit 10;
-abcdefghijklmnopqrstuvwxyzàáâäǎæãåābçćčċďðèéêëěẽēėęfğġħìíîïǐĩīıįjķłļľmñńņňòóôöǒœøõōpqřßşșśšțťþùúûüǔũūűůvŵxýŷÿźžż
 select tempoct.time as time, dischargeoct.value as disc, tempoct.value as temp 
 from dischargeoct join tempoct on dischargeoct.time = tempoct.time limit 10;
 create table dataOct (time timestamp, disc float, temp float);
 \i testJoin.sql
+
+
+
+
+queries and source code
 
 
 NECCECARY
