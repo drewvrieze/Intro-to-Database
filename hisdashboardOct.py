@@ -50,7 +50,7 @@ def update_plot(axes,canvas):
     row=curs.fetchone()
     print (row[1])
 
-#    fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(10, 4))
+#   fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(10, 4))
     #plt.title("Colorado River in Oct 2026")
     axes[0].scatter(x, y,marker='x',s=10)
     axes[0].set_title("Temperature vs Discharge")

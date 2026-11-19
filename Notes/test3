@@ -1,0 +1,53 @@
+\d shows tables
+\d {table} shows parts of that table
+create index on dataOct (time);
+\i reads file and treats it like you are typing it out
+
+
+test 3 is 50 minute test on 17th at 9:30 am
+we won't do anything else in class that day
+50% from 20 multiple choice
+50% from reading writing code 3 - 4
+    it will be code we have seen in class
+    Focus is the pulling of real data and building a dashboard
+    - - - CTKinter customizable TK not on test
+topics  
+    matplotlib. dashboardOct.py (One without tkinter)
+        Axes, which you can have one or many
+        A tool for creating plots
+            scatter -> scatter functions
+            hist -> hist function
+        set_xlabel(xlabel for the entire plot)
+        set_ylabel(ylabel for the entire plot)
+        set_title(title for the entire plot)
+        text You can add arbitrary test to a plot wherever you want
+    matplotlib mixed with tkinter
+        GUI dashboard
+            Figure instead of plt because tou need a TKinter flavored PLT to manipulate
+            "From matplotlib.figure import Figure"
+            "from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, Navigation:
+
+psql commands that are very useful:
+    \d 
+    \d {table_name}
+    \! {bash shell command}
+    \timing - turns timing on and off
+    \i - run a text file as if i typed it
+        if you have a text file with sql in it
+    \copy - This does an import of a csv file
+        if you have a text file with comma seperated values
+    
+SQL since the last test
+    joins
+        join to put together the discharge and the temp in river data 
+    testJoin.sql from river data
+    insert into a table with a select
+    timestamp as a datatype 
+        you can do comparissons on timestamps
+            before or after another timestamp 
+    adding indices
+        create index on table {table} (columns)
+        primary key it creates an index for you
+        It changes no data in the database, there are no relationship changes 
+        when you add an index
+
